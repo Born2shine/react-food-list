@@ -13,7 +13,7 @@ const index = ({mealBag}) => {
                     <h2>{title}</h2>
                     <h2>{price}</h2>
                 </div>
-                <p className="hero-text">served with french fries+ drink</p>
+                <p className="hero-text">served with french fries + drink</p>
                 <div className="description">
                     {
                         showNow + ' more...'

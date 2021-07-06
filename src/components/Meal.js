@@ -4,13 +4,6 @@ import SingleMeal from '../components/SingleMeal'
 
 const Meal = () => {
     const {food, loading} = useFetchMeal()
-    const [meal, setMeal] = useState(food)
-    // useEffect(() =>{
-    //            if(food){
-    //             console.log(food.meals)
-    //            }  
-    // },[food])
-
     if(loading){
         return <h1>Loading...</h1>
     }
@@ -18,7 +11,7 @@ const Meal = () => {
         <section className="main">
            { food &&
             <div className="food-container">
-               
+                <div className="foods">
                 {
                         food.meals.map((f) => {
                             return (
@@ -28,6 +21,10 @@ const Meal = () => {
                             )
                         })
                 }
+                </div>
+               <div className="loadmore-btn">
+                    <a href="" className="load-more">Load More</a>
+               </div>
             </div>
            }
         </section>
