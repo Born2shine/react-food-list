@@ -1,11 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import useFetchMeal from '../hooks/useFetch'
 import SingleMeal from '../components/SingleMeal'
+import { ImSpinner8 } from 'react-icons/im'
 
 const Meal = () => {
     const {food, loading} = useFetchMeal()
     if(loading){
-        return <h1>Loading...</h1>
+        return (
+            <div className="loader-wrapper">
+               <div className="loader">
+                <ImSpinner8/>
+               </div>
+            </div>
+        )
     }
     return (
         <section className="main">
