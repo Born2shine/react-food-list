@@ -80,7 +80,7 @@ body {
 
 .main .food-container .foods .single-meal article img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-right-radius: 18px;
@@ -102,8 +102,13 @@ body {
   color: #49494c;
 }
 
+.main .food-container .foods .single-meal article .info-wrapper .hero h2 {
+  font-size: 14px;
+}
+
 .main .food-container .foods .single-meal article .info-wrapper .hero-text, .main .food-container .foods .single-meal article .info-wrapper .description {
   color: #7a7979;
+  font-size: 12px;
 }
 
 .main .food-container .foods .single-meal article .info-wrapper .description {
@@ -117,7 +122,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .main .food-container .foods .single-meal article footer .rating {
@@ -132,15 +137,15 @@ body {
 
 .main .food-container .foods .single-meal article footer .rating .rating-icon {
   color: #e79908;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .main .food-container .foods .single-meal article .add-to-cart {
   display: inline-block;
   background: #ffa500;
   color: #fff;
-  padding: .7rem 2rem;
-  font-size: 2.5rem;
+  padding: .5rem 1.8rem;
+  font-size: 2rem;
   border-top-left-radius: 18px;
 }
 
