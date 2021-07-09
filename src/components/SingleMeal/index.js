@@ -25,6 +25,13 @@ const index = ({mealBag}) => {
                     {
                         ratingArr.map((r,i) => <span key={i} className="rating-icon"><AiFillStar/></span>)
                     }
+                    {
+                        ratingArr.map((r,i) => {
+                            return ( 5 - ratings > i &&
+                                <span key={i} className="no-rating"><AiFillStar/></span>
+                            )
+                        })
+                    }
                 </div>
                 <a href="$" className="add-to-cart"><AiOutlinePlus/></a>
               </footer>

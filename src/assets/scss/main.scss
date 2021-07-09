@@ -6,6 +6,7 @@ $clr-grey: #7a7979;
 $clr-white: #fff;
 $clr-dark: #49494c;
 $radius: 18px;
+$clr-grey-5: #e0e0e0;
 
 *{
     margin: 0;
@@ -95,6 +96,9 @@ body{
                        .rating-icon{
                         color: #e79908;
                         font-size: 1rem;
+                       }
+                       .no-rating{
+                           color: $clr-grey-5;
                        }
                     }
                    }

@@ -140,6 +140,10 @@ body {
   font-size: 1rem;
 }
 
+.main .food-container .foods .single-meal article footer .rating .no-rating {
+  color: #e0e0e0;
+}
+
 .main .food-container .foods .single-meal article .add-to-cart {
   display: inline-block;
   background: #ffa500;
